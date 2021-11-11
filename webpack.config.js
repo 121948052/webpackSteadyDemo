@@ -14,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '管理输出'
     }),
-    
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     filename: '[name].bundle.js',
@@ -36,9 +36,5 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     hot: true
-  },
-  mode: 'development',
-  optimazation: {
-    usedExports: true
   }
 };
