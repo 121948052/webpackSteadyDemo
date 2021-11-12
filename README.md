@@ -1,1 +1,3 @@
 webpack steady demo
+shim预置全局变量
+全局export
